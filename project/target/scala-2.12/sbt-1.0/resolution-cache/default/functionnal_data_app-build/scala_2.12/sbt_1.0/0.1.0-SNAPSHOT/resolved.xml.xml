@@ -4,7 +4,7 @@
 		module="functionnal_data_app-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20190409180605"
+		publication="20190410182524"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

@@ -4,12 +4,14 @@ public class Message {
     private String droneName;
     private String value;
     private Boolean isIncident;
+    private String simulationName;
 
     public Message() {
         super();
     }
 
-    public Message(String droneName, String value, Boolean isIncident) {
+    public Message(String simulationName, String droneName, String value, Boolean isIncident) {
+        this.simulationName = simulationName;
         this.droneName = droneName;
         this.value = value;
         this.isIncident = isIncident;
@@ -39,10 +41,19 @@ public class Message {
         isIncident = incident;
     }
 
+    public String getSimulationName() {
+        return simulationName;
+    }
+
+    public void setSimulationName(String simulationName) {
+        this.simulationName = simulationName;
+    }
+
     @Override
     public String toString() {
         return "Message{" +
-                "droneName='" + droneName + '\'' +
+                "simulationName'" + simulationName + '\'' +
+                ", droneName='" + droneName + '\'' +
                 ", value='" + value + '\'' +
                 ", isIncident=" + isIncident +
                 '}';
